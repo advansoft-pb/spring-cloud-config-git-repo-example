@@ -1,0 +1,8 @@
+server:
+  port: 9090
+greetings:
+  EN: Hello
+  ES: Hola
+  DE: Hallo
+  PL: Hejka
+greetingDefaultKey: PL
