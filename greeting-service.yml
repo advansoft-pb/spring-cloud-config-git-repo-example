@@ -4,5 +4,6 @@ greetings:
   EN: Hello
   ES: Hola
   DE: Hallo
-  PL: Hejka
+  PL: Cześć
+  SK: Hellou
 greetingDefaultKey: PL
