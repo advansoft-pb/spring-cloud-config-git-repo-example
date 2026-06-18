@@ -43,3 +43,9 @@ management:
       exposure:
         include: "*"
 
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.optimagrowth: DEBUG
+
