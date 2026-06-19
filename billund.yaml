@@ -35,6 +35,22 @@ spring:
           - Path=/odense/**
           filters:
           - RewritePath=/odense/(?<path>.*), /$\{path}
+      server:
+        webmvc:
+          enabled: true
+          routes:
+          - id: aarhus
+            uri: lb://aarhus
+            predicates:
+            - Path=/aarhus/**
+            filters:
+            - RewritePath=/aarhus/(?<path>.*), /$\{path}
+          - id: odense
+            uri: lb://odense
+            predicates:
+            - Path=/odense/**
+            filters:
+            - RewritePath=/odense/(?<path>.*), /$\{path}
 
 management:
   endpoints:
